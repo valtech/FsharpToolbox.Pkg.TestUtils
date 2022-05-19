@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <!-- SourceLink configuration -->
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Embedded</DebugType>
+    <EmbedAllSources>True</EmbedAllSources>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsharpToolbox.Pkg.AspNetCore.Setup" Version="6.0.2" />
+    <PackageReference Include="FsharpToolbox.Pkg.Communication.ServiceBus" Version="5.0.3" />
+    <PackageReference Include="FsharpToolbox.Pkg.EventListener" Version="5.0.3" />
+    <PackageReference Include="FsharpToolbox.Pkg.FpUtils" Version="2.0.16" />
+    <PackageReference Include="nunit" Version="3.*" />
+    <PackageReference Include="Polly" Version="7.*" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Async.fs" />
+    <Compile Include="EventListener.fs" />
+    <Compile Include="TestHost.fs" />
+  </ItemGroup>
+
+</Project>
